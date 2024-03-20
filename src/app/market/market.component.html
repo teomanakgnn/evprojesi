@@ -1,0 +1,42 @@
+<!-- Navigasyon Çubuğu -->
+<nav class="navbar">
+  <a href="/">Anasayfa</a>
+  <a href="/market">Market</a>
+  <a href="/about">Hakkımızda</a>
+  <a href="/contact">İletişim</a>
+</nav>
+
+<!-- Başlık ve Filtreleme -->
+<div class="header">
+  <h1>İlanlar</h1>
+</div>
+
+<!-- İlan Listesi -->
+<div class="listings">
+  <div class="listing" *ngFor="let listing of listings">
+    <!-- Link alanı kullanıldı, ancak görsel için bir alan olmadığından görsel kısmı kaldırıldı -->
+    <!--<a [href]="listing.link" target="_blank">İlanın Detaylarına Git</a>-->
+    <div class="listing-info">
+      <h3>Listing {{ listing.id }}</h3>
+      <p>Fiyat: {{ listing.price }}</p>
+      <p>İlçe: {{ listing.district }}</p>
+      <p>İlan No: {{ listing.id }}</p>
+      <p>m²: {{ listing.size }} m²</p>
+      <p>Oda Sayısı: {{ listing.roomCount }}</p>
+      <p>Bina Yaşı: {{ listing.buildingAge }}</p>
+      <p>Kat: {{ listing.floor }}</p>
+      <p>Toplam Kat: {{ listing.totalFloors }}</p>
+      <p>Isıtma: {{ listing.heating }}</p>
+      <p>Banyo Sayısı: {{ listing.bathroomCount }}</p>
+      <p>Balkon: {{ listing.hasBalcony ? 'Var' : 'Yok' }}</p>
+      <p>Asansör: {{ listing.hasElevator ? 'Var' : 'Yok' }}</p>
+      <p>Otopark: {{ listing.hasParking ? 'Var' : 'Yok' }}</p>
+      <p>Eşyalı: {{ listing.isFurnished ? 'Evet' : 'Hayır' }}</p>
+      <p>Site İçerisinde: {{ listing.isInSite ? 'Evet' : 'Hayır' }}</p>
+      <p>Kullanım Durumu: {{ listing.occupancyStatus }}</p>
+      <button [routerLink]="['/urun-detaylari', listing.id]" class="inspect-button">İncele</button>
+    </div>
+  </div>
+</div>
+
+

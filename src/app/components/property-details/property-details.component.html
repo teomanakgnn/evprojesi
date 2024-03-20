@@ -1,0 +1,13 @@
+<div class="property-details-container">
+  <mat-card  class="property-card" *ngFor="let property of property">
+    <mat-card-header>
+      <mat-card-title>{{ property.title }}</mat-card-title>
+      <mat-card-subtitle>{{ property.price }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="property.image" alt="Property image">
+    <mat-card-content>
+      <p>{{ property.descripton}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+

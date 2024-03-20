@@ -1,0 +1,9 @@
+.home-page-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.property-card {
+  margin: 20px;
+  width: 300px;
+}

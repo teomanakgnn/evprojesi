@@ -1,0 +1,131 @@
+.property-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Görseller ve detaylar arasında boşluk */
+}
+
+.property-images {
+  flex: 1 1 300px; /* Esnek boyut, minimum 300px */
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 24px;
+  color: white; /* İkon rengi beyaz */
+  background-color: rgba(0, 0, 0, 0.6); /* Yarı saydam siyah arka plan */
+  border: none; /* Kenarlık kaldır */
+  border-radius: 50%; /* Daire şeklinde */
+  width: 40px; /* Genişlik */
+  height: 40px; /* Yükseklik */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-arrow {
+  left: -20px; /* Sol ok pozisyonu */
+}
+
+.right-arrow {
+  right: -20px; /* Sağ ok pozisyonu */
+}
+
+.property-image-container {
+  display: flex; /* Fotoğraflar yan yana */
+  overflow-x: auto; /* Yatay kaydırma */
+  scroll-snap-type: x mandatory; /* Kaydırma esnasında fotoğraflara yapışma */
+}
+
+.property-image {
+  flex: 0 0 100%; /* Her fotoğraf konteynerin tam genişliğini kaplar */
+  height: auto; /* Orantılı yükseklik */
+  object-fit: cover;
+  scroll-snap-align: start; /* Kaydırma esnasında başa yapışma */
+}
+
+.property-details {
+  flex: 1 1 300px; /* Esnek boyut, minimum 300px */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Daha belirgin gölge */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff; /* Daha temiz bir arka plan */
+}
+
+.property-title, .property-price, .contact-name, .contact-phone {
+  margin-bottom: 15px; /* Daha fazla boşluk */
+}
+
+.property-title {
+  font-size: 1.5em; /* Daha büyük başlık */
+}
+
+.property-info p, .property-contact p {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.property-info strong, .property-contact strong {
+  color: #333;
+}
+
+.property-price {
+  color: #D32F2F;
+  font-size: 1.4em; /* Daha büyük fiyat */
+}
+
+.contact-name {
+  font-weight: bold;
+}
+
+.contact-phone {
+  margin-bottom: 0;
+}
+.container {
+  justify-content: center;
+}
+
+.property-contact {
+  flex: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Daha belirgin gölge */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9; /* İletişim için farklı arka plan */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* İçeriği dikey olarak ortala */
+}
+
+.property-title, .property-price, .contact-name, .contact-phone {
+  margin-bottom: 15px; /* Daha fazla boşluk */
+}
+
+.property-title {
+  font-size: 1.5em; /* Daha büyük başlık */
+}
+
+.property-info p, .property-contact p {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.property-info strong, .property-contact strong {
+  color: #333;
+}
+.property-price {
+  color: #D32F2F;
+  font-size: 1.4em; /* Daha büyük fiyat */
+}
+
+.contact-name {
+  font-weight: bold;
+}
+
+.contact-phone {
+  margin-bottom: 0;
+}

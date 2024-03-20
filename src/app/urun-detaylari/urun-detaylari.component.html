@@ -1,0 +1,44 @@
+<nav class="navbar">
+  <a href="/">Anasayfa</a>
+  <a href="/market">Market</a>
+  <a href="/about">Hakkımızda</a>
+  <a href="/contact">İletişim</a>
+</nav>
+
+<!--<header class="product-header">
+  <h1>{{ listing?.title }}</h1>
+</header>-->
+
+<div class="product-container">
+  <div class="product-gallery">
+
+    <div class="main-image">
+      <img src="https://r.resimlink.com/u-JQT.png" alt="Evin Ana Görseli">
+    </div>
+
+
+  </div>
+
+  <aside class="product-details">
+    <h2>Detaylar</h2>
+    <ul>
+      <h3>Listing {{ listing?.id }}</h3>
+      <p>Fiyat: {{ listing?.price }}</p>
+      <p>İlçe: {{ listing?.district }}</p>
+      <p>İlan No: {{ listing?.id }}</p>
+      <p>m²: {{ listing?.size }} m²</p>
+      <p>Oda Sayısı: {{ listing?.roomCount }}</p>
+      <p>Bina Yaşı: {{ listing?.buildingAge }}</p>
+      <p>Kat: {{ listing?.floor }}</p>
+      <p>Toplam Kat: {{ listing?.totalFloors }}</p>
+      <p>Isıtma: {{ listing?.heating }}</p>
+      <p>Banyo Sayısı: {{ listing?.bathroomCount }}</p>
+      <p>Balkon: {{ listing?.hasBalcony ? 'Var' : 'Yok' }}</p>
+      <p>Asansör: {{ listing?.hasElevator ? 'Var' : 'Yok' }}</p>
+      <p>Otopark: {{ listing?.hasParking ? 'Var' : 'Yok' }}</p>
+      <p>Eşyalı: {{ listing?.isFurnished ? 'Evet' : 'Hayır' }}</p>
+      <p>Site İçerisinde: {{ listing?.isInSite ? 'Evet' : 'Hayır' }}</p>
+      <p>Kullanım Durumu: {{ listing?.occupancyStatus }}</p>
+    </ul>
+  </aside>
+
